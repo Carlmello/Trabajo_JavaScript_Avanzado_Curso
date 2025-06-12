@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- META ETIQUETAS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina_web_trabajo_final_javascript">
+  <meta name="keywords" content="trabajofinal,javascript,ajax,html,css,pagina_web">
+  <meta name="author" content="carmelo_omar_hernandez_cardona">
+  <meta name="robots" content="all">
+  <meta name="category" content="spanish,spain,programacion_web">
+  <meta name="generator" content="visual_studio_code">
+
+  <title>TRABAJO FINAL JAVASCRIPT AVANZADO</title>
+
+  <!-- LINKS FAVICON Y ESTILOS-->
+  <link rel="icon" type="image/png" href="../wheel-steel-svgrepo-com.png?v=2">
+  <link rel="stylesheet" href="../css/styles1.css">
+
+</head>
+
+
+<body>
+  
+  <header>
+
+    <!--Caja con enlaces del sitio web-->
+    <nav>
+      <div id="navbar">
+        <ul>
+          <li><a href="../index.html" title="enlace_index">INICIO</a></li>
+          <li><a href="./galeria.html" title="enlace_galeria">GALERÍA</a></li>
+          <li><a href="#" title="enlace_presupuesto" class="currentPage">PRESUPUESTO</a></li>
+          <li><a href="./contacto.html" title="enlace_contacto">CONTACTO</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Caja con cabecera-->
+    <div class="cabecera">
+      <h1>CUATROCOCHES PUNTO COM</h1>
+      <h2>PRESUPUESTO / PEDIDOS</h2>
+      <img src="../assets/images/logotipo.png" id="logo_principal" alt="logotipo_principal" width="1714" height="754">
+    </div>
+    
+  </header>
+
+  <main>
+    <section>
+
+      <form id="formulario" action="../assets/php/prueba.php" method="post">
+
+        <div id="presupuesto-container">
+
+          <div class="presupuesto-div" id="buyer-data-div">
+            <fieldset>
+              <legend><h3>Datos del comprador</h3></legend>
+              <ul>
+                <li>
+                  <label for="nombre_input">Nombre*: </label>
+                  <div>
+                    <input id="nombre_input" type="text" name="nombre" value="" class="empty">
+                    <span class="errorSpan"></span>
+                  </div>
+                </li>
+                <li>
+                  <label for="apell_input">Apellidos*: </label>
+                  <div>
+                    <input id="apell_input" type="text" name="apellidos" value="" class="empty">
+                    <span class="errorSpan"></span>
+                  </div>
+                </li>
+                <li>
+                  <label for="tfno_input">Teléfono*: </label>
+                  <div>
+                    <input id="tfno_input" type="text" name="telefono" value="" class="empty">
+                    <span class="errorSpan"></span>
+                  </div>
+                </li>
+                <li>
+                  <label for="email_input">Correo electrónico*: </label>
+                  <div>
+                    <input id="email_input" type="text" name="email" value="" class="empty">
+                    <span class="errorSpan"></span>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          
+          <div class="presupuesto-div" id="purchase-div">
+
+            <fieldset>
+
+              <legend><h3>Compra del producto</h3></legend>
+
+              <div id="productos-select-container">
+                <label for="productos-select">VEHÍCULO: </label>
+                <select id="productos-select" name="productos-select">
+                  <option value="">Seleccione un producto</option>
+                </select>
+              </div>
+              
+              <!--Descubrí que tenía problemas con este botón, ya que el formulario lo detectaba como SUBMIT automáticamente. De modo que tuve que añadirle "type=button" para solventar este problema-->
+              <button type="button" class="purchase-Style-Btn" id="add_to_chart">Añadir al carrito</button>
+
+              <div class="h4-div" id="entrega-container">
+
+                <h4>Plazo de entrega:</h4>
+
+                <div id="entrega-child-container" class="mini-boxes-container">
+                  
+                  <div>
+                    <input type="radio" name="plazo" id="plazo_1" value="-2">
+                    <label for="plazo_1">Lento 20 - 30 días <br> <span class="txtSmall italic">(Descuento de un 2%)</span> </label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" name="plazo" id="plazo_2" value="5" checked>
+                    <label for="plazo_2">Average 10 - 20 días <br> <span class="txtSmall italic">(Coste 5%)</span> </label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" name="plazo" id="plazo_3" value="15">
+                    <label for="plazo_3">Express 5 - 10 días <br> <span class="txtSmall italic">(Coste 15%)</span> </label>
+                  </div>  
+
+                </div>
+              </div>
+
+              <div class="h4-div" id="extras-container">
+
+                <h4>Extras:</h4>
+
+                <div id="extras-child-container" class="mini-boxes-container">
+
+                  <div>
+                    <input type="checkbox" name="extra_1" id="extra_1" class="checkbox-extra" value="seguro 1 año:200">
+                    <label for="extra_1">Seguro 1 año <br> <span class="txtSmall italic">(200 €)</span> </label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" name="extra_2" id="extra_2" class="checkbox-extra" value="garantia 4 años:450">                
+                    <label for="extra_2">Garantía 4 años <br> <span class="txtSmall italic">(450 €)</span> </label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" name="extra_3" id="extra_3" class="checkbox-extra" value="seguro a todo riesgo:800">
+                    <label for="extra_3">Seguro a todo riesgo 1 año <br> <span class="txtSmall italic">(800€)</span> </label>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div id="presupuesto-carrito" class="mini-boxes-container">
+
+                <div id="carrito-container" >
+                  <h4 id="h4-carrito">Carrito</h4>
+                  <div id="carrito"></div>
+                </div>
+                
+                <div class="miniBox" id="total-container" >
+                  <label for="total_value">Presupuesto Total: </label>
+                  <input type="text" name="total_value" id="total_value" value="" disabled>
+                </div>
+              </div>
+
+              <div class="label-input">
+                <input type="checkbox" name="politicas-check" id="politicas-checkbox">
+                <span>
+                  <label for="politicas-checkbox"><span class="demiBTN">Acepto*</span></label> las <a href="../assets/docs/documento1.pdf" title="enlace_politica_privacidad" target="_blank">políticas de privacidad</a> de la empresa
+                </span>
+              </div>
+
+              <button  type="submit" class="purchase-Style-Btn" id="comprar_btn">COMPRAR</button>
+
+              <span class="txtSmall italic">Los elementos marcados con un (*) son obligatorios para finalizar la compra</span>
+
+            </fieldset>
+          </div>
+
+        </div>
+
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="ajustado1">
+    <!--Caja con enlaces a redes sociales-->
+    <div id="socialMedia">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/" title="enlace_a_instagram" target="_blank">
+            <img src="../assets/images/social-media/instagram-svgrepo-com.svg" alt="icono_con_enlace_a_instagram" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://x.com/" title="enlace_a_twitter" target="_blank">
+            <img src="../assets/images/social-media/twitter-round-svgrepo-com.svg" alt="icono_con_enlace_a_twitter-x" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://www.etsy.com/es/" title="enlace_a_etsy" target="_blank">
+            <img src="../assets/images/social-media/etsy-logo-svgrepo-com.svg" alt="icono_con_enlace_a_etsy" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://es-es.facebook.com/" title="enlace_a_facebook" target="_blank">
+            <img src="../assets/images/social-media/facebook-svgrepo-com.svg" alt="icono_con_enlace_a_facebook" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://web.whatsapp.com/" title="enlace_a_whatsapp" target="_blank">
+            <img src="../assets/images/social-media/whatsapp-svgrepo-com.svg" alt="icono_con_enlace_a_whatsapp" width="30" height="30">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Caja con información adicional en el footer-->
+    <div id="footerData">
+      <div id="address">
+        <p>Dirección de la empresa:</p>
+        <p>M-530, Villamanta, Comunidad de Madrid, 28610, España</p>
+      </div>
+
+      <div id="politics">
+        <a href="../assets/docs/documento1.pdf" title="enlace_a_politica_de_privacidad" target="_blank">
+          Política de privacidad
+        </a>
+
+        <a href="../assets/docs/documento2.pdf" title="enlace_a_aviso_legal" target="_blank">
+          Aviso Legal
+        </a>
+      </div>
+
+    </div>
+    
+  </footer>
+
+  <!--JavaScript-->
+  <script type ="module" src="../js/scriptsPresupuesto.js"></script>
+  <noscript>Este navegador no soporta JavaScript</noscript>
+  
+</body>
+
+</html>

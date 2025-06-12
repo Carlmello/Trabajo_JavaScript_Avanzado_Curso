@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- META ETIQUETAS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina_web_trabajo_final_javascript">
+  <meta name="keywords" content="trabajofinal,javascript,ajax,html,css,pagina_web">
+  <meta name="author" content="carmelo_omar_hernandez_cardona">
+  <meta name="robots" content="all">
+  <meta name="category" content="spanish,spain,programacion_web">
+  <meta name="generator" content="visual_studio_code">
+
+  <title>TRABAJO FINAL JAVASCRIPT AVANZADO</title>
+
+  <!-- LINKS FAVICON Y ESTILOS-->
+   <!--LINK LEAFLET-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css">
+  <link rel="icon" type="image/png" href="../wheel-steel-svgrepo-com.png?v=2">
+  <link rel="stylesheet" href="../css/styles1.css">
+
+</head>
+
+
+<body>
+  
+  <header>
+    
+    <!--Caja con enlaces del sitio web-->
+    <nav>
+      <div id="navbar">
+        <ul>
+          <li><a href="../index.html" title="enlace_index">INICIO</a></li>
+          <li><a href="./galeria.html" title="enlace_galeria">GALERÍA</a></li>
+          <li><a href="./presupuesto.html" title="enlace_presupuesto">PRESUPUESTO</a></li>
+          <li><a href="#" title="enlace_contacto" class="currentPage">CONTACTO</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Caja con cabecera-->
+    <div class="cabecera">
+      <h1>CUATROCOCHES PUNTO COM</h1>
+      <h2>CONTACTO</h2>
+      <img src="../assets/images/logotipo.png" id="logo_principal" alt="logotipo_principal" width="1714" height="754">
+    </div>
+
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Datos de contacto de la empresa</h2>
+      <div id="contacto-section">
+        <div class="contacto-container" id="contacto_informacion">
+          <h3>INFORMACIÓN</h3>
+          <fieldset>
+            <legend>cuatrocochespuntocom</legend>
+            <ul>
+              <li><span class="demiTIT">Nombre de la empresa:</span> cuatrocochespuntocom S.I.U.</li>
+              <li><span class="demiTIT">Teléfono de contacto</span>: +99 999 999 999</li>
+              <li><span class="demiTIT">Ubicación:</span> M-530, Villamanta, Comunidad de Madrid, 28610, España</li>
+              <li><span class="demiTIT">Código postal:</span> 28610</li>
+              <li><span class="demiTIT">CEO cuatrocochespuntocom:</span> John Doe</li>
+              <li><span class="demiTIT">Empresa servicio transporte:</span> Acme S.L.</li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=vXYVfk7agqU" title="enlace_video_bienvenida" target="_blank">
+                  Video de bienvenida
+                </a>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <h3>MAPA UBICACIÓN EMPRESA</h3>
+        <div class="mapa contacto-container" id="ubicacion_Mapa"></div>
+
+        <h3>RUTA HASTA UBICACIÓN</h3>
+        <div class="mapa contacto-container" id="ubicacion_Ruta"></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="ajustado2">
+    <!--Caja con enlaces a redes sociales-->
+    <div id="socialMedia">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/" title="enlace_a_instagram" target="_blank">
+            <img src="../assets/images/social-media/instagram-svgrepo-com.svg" alt="icono_con_enlace_a_instagram" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://x.com/" title="enlace_a_twitter" target="_blank">
+            <img src="../assets/images/social-media/twitter-round-svgrepo-com.svg" alt="icono_con_enlace_a_twitter-x" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://www.etsy.com/es/" title="enlace_a_etsy" target="_blank">
+            <img src="../assets/images/social-media/etsy-logo-svgrepo-com.svg" alt="icono_con_enlace_a_etsy" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://es-es.facebook.com/" title="enlace_a_facebook" target="_blank">
+            <img src="../assets/images/social-media/facebook-svgrepo-com.svg" alt="icono_con_enlace_a_facebook" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://web.whatsapp.com/" title="enlace_a_whatsapp" target="_blank">
+            <img src="../assets/images/social-media/whatsapp-svgrepo-com.svg" alt="icono_con_enlace_a_whatsapp" width="30" height="30">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Caja con información adicional en el footer-->
+    <div id="footerData">
+      <div id="address">
+        <p>Dirección de la empresa:</p>
+        <p>M-530, Villamanta, Comunidad de Madrid, 28610, España</p>
+      </div>
+      
+      <div id="politics">
+        <a href="../assets/docs/documento1.pdf" title="enlace_a_politica_de_privacidad" target="_blank">
+          Política de privacidad
+        </a>
+
+        <a href="../assets/docs/documento2.pdf" title="enlace_a_aviso_legal" target="_blank">
+          Aviso Legal
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!--JavaScript-->
+   <!--LEAFLET-->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+  <script type ="module" src="../js/scriptsContacto.js"></script>
+  <noscript>Este navegador no soporta JavaScript</noscript>
+  
+</body>
+
+</html>

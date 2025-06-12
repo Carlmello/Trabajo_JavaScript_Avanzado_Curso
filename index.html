@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- META ETIQUETAS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina_web_trabajo_final_javascript">
+  <meta name="keywords" content="trabajofinal,javascript,ajax,html,css,pagina_web">
+  <meta name="author" content="carmelo_omar_hernandez_cardona">
+  <meta name="robots" content="all">
+  <meta name="category" content="spanish,spain,programacion_web">
+  <meta name="generator" content="visual_studio_code">
+
+  <title>TRABAJO FINAL JAVASCRIPT AVANZADO</title>
+
+  <!-- LINKS FAVICON Y ESTILOS-->
+  <link rel="icon" type="image/png" href="wheel-steel-svgrepo-com.png?v=2">
+  <link rel="stylesheet" href="./css/styles1.css">
+
+</head>
+
+
+<body>
+  
+  <header>
+
+    <!--Caja con enlaces del sitio web-->
+    <nav>
+      <div id="navbar">
+        <ul>
+          <li><a href="#" title="enlace_index" class="currentPage">INICIO</a></li>
+          <li><a href="./views/galeria.html" title="enlace_galeria">GALERÍA</a></li>
+          <li><a href="./views/presupuesto.html" title="enlace_presupuesto">PRESUPUESTO</a></li>
+          <li><a href="./views/contacto.html" title="enlace_contacto">CONTACTO</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Caja con cabecera-->
+    <div class="cabecera">
+      <h1>CUATROCOCHES PUNTO COM</h1>
+      <h2>INICIO</h2>
+      <img src="./assets/images/logotipo.png" id="logo_principal" alt="logotipo_principal" width="1714" height="754">
+    </div>
+    
+  </header>
+
+  <main>
+
+    <section>
+      <h2>PRESENTACIÓN</h2>
+      <p>
+        Le damos la bienvenida a CUATROCOCHES PUNTO COM, una página web "ficticia" creada por un alumno como práctica de programación web y trabajo de estudio de JavaScript, donde encontrará una breve selección con cuatro de los vehículos mejor valorados del mercado actual, entre los cuales destacamos una joya del pasado. Le invitamos a descubrirlos y a dejarse seducir por estas magníficas obras de la ingeniería, por las que compartimos la misma pasión que usted
+      </p>
+
+      <p>
+        Actualmente contamos con un extenso número de cada uno de estos vehículos por lo que, si tiene interés en alguno de ellos, no dude en ponerse en contacto con nosotros mediante cualquier medio que ponemos a su disposición en nuestra página de contacto, o al pie de cada página de nuestro sitio web
+      </p>
+
+      <p>
+        Atenderemos con gusto su interés en nuestra empresa, y trataremos de ayudarle en todo lo posible para pueda llevarse consigo uno, o más, de nuestros maravillosos vehículos
+      </p>
+    </section>
+
+    <section>
+      <h2>SERVICIOS</h2>
+      <p>
+        Visitando nuestros enlaces podrá acceder a la <a href="./views/galeria.html" class="italic" target="_blank" title="enlace_galeria">galería</a>, donde se pueden apreciar nuestros automóviles gracias a las imágenes cedidas por <a href="https://www.pexels.com/es-es/" class="italic" target="_blank" title="enlace_pexels.com">pexels.com</a>
+      </p>
+
+      <p>
+        En caso de querer saber más acerca de nosotros, contamos con una página de <a href="./views/contacto.html" class="italic" target="_blank" title="enlace_contacto">contacto</a> donde encontrará información de la empresa así como nuestra ubicación y un mapa generador de rutas del que puede servirse si quisiera visitar nuestras instalaciones
+      </p>
+
+      <p>
+        Para hacer una operación de compra online, puede visitar nuestra página <a href="./views/presupuesto.html" class="italic" target="_blank" title="enlace_presupuesto">presupuesto</a> donde encontrará dos formularios: el primero para introducir sus datos personales y el segundo para operar la compra de nuestros productos. En este último formulario contamos con herramientras de cálculo de presupuesto para que, antes de confirmar la compra del producto, pueda verificar los extras y vehículos seleccionados, contando con la totalización del importe de la operación. Nuestro servicio de entrega a domicilio, aunque ficticio, es absolutamente eficaz y rápido, por lo que puede merecer mucho la pena gastarse unos euros de más tramitando la compra de forma online
+      </p>
+    </section>
+
+    <section>
+      <h2>NOTICIAS</h2>
+      <div id="date-container">
+        <h3 id="show-date">Fecha: </h3>
+        <h3 id="show-time">Hora: </h3>
+      </div>
+      <p class="small-text">Aviso: datos ficticios. Provenientes de la página de uso gratuito, para tests, <a href="https://jsonplaceholder.typicode.com" title="enlace_a_placeholder.com" target="_blank"> jsonplaceholder</a></p>
+      <div id="newsContainer">
+      </div>
+      <div id="errordiv"></div>
+    </section>
+
+    <section>
+      <h2>MÁS MARCAS DE COCHES</h2>
+      <!--En esta sección he querido hacer un carrusel con logos de marcas de coches-->
+      <div class="carousel-container">
+
+        <button class="brands-prev-btn" id="brands-prev-btn">
+          <img src="./assets/images/other/arrow-left-335-svgrepo-com.svg" alt="prev_arrow">
+        </button>
+        <button class="brands-next-btn" id="brands-next-btn">
+          <img src="./assets/images/other/arrow-right-336-svgrepo-com.svg" alt="next_arrow">
+        </button>
+
+        <div class="carousel" id="carousel">
+
+          <div class="boxCarousel inactive">
+
+          </div>
+          <div class="boxCarousel active">
+
+          </div>
+          <div class="boxCarousel inactive">
+
+          </div>
+
+        </div> <!--carousel-->
+
+        <div class="dots-container" id="dots-container-index"></div>
+
+      </div> <!--carousel-container-->
+
+    </section>
+
+  </main>
+
+  <footer>
+    <!--Caja con enlaces a redes sociales-->
+    <div id="socialMedia">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/" title="enlace_a_instagram" target="_blank">
+            <img src="assets/images/social-media/instagram-svgrepo-com.svg" alt="icono_con_enlace_a_instagram" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://x.com/" title="enlace_a_twitter" target="_blank">
+            <img src="assets/images/social-media/twitter-round-svgrepo-com.svg" alt="icono_con_enlace_a_twitter-x" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://www.etsy.com/es/" title="enlace_a_etsy" target="_blank">
+            <img src="assets/images/social-media/etsy-logo-svgrepo-com.svg" alt="icono_con_enlace_a_etsy" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://es-es.facebook.com/" title="enlace_a_facebook" target="_blank">
+            <img src="assets/images/social-media/facebook-svgrepo-com.svg" alt="icono_con_enlace_a_facebook" width="30" height="30">
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://web.whatsapp.com/" title="enlace_a_whatsapp" target="_blank">
+            <img src="assets/images/social-media/whatsapp-svgrepo-com.svg" alt="icono_con_enlace_a_whatsapp" width="30" height="30">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Caja con información adicional en el footer-->
+    <div id="footerData">
+      <div id="address">
+        <p>Dirección de la empresa:</p>
+        <p>M-530, Villamanta, Comunidad de Madrid, 28610, España</p>
+      </div>
+      
+      <div id="politics">
+        <a href="assets/docs/documento1.pdf" title="enlace_a_politica_de_privacidad" target="_blank">
+          Política de privacidad
+        </a>
+
+        <a href="assets/docs/documento2.pdf" title="enlace_a_aviso_legal" target="_blank">
+          Aviso Legal
+        </a>
+      </div>
+      
+    </div>
+  </footer>
+
+  <!--JavaScript-->
+  <script type="module" src="./js/scriptsIndex.js"></script>
+  <noscript>Este navegador no soporta JavaScript</noscript>
+  
+</body>
+
+</html>
