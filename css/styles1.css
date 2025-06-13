@@ -856,6 +856,16 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
 
 @media only screen and (max-width:500px){
 
+  body{
+    display: flex;
+    flex-direction: column;
+
+    main{
+      min-height:300vh;
+    }
+
+  }
+  
   h1{
     text-align:center;
   } /*h1*/
@@ -934,7 +944,7 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
 
       .info-card{
         height:30%;
-        *{font-size:3rem;}
+        *{font-size:2.3rem;}
       } /*.info-card*/
 
     } /*.card*/
@@ -1118,21 +1128,9 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
     } /*#contacto_informacion*/
 
     .mapa{
-      width:95vw;
+      width:75vw;
     } /*.mapa*/
 
   } /*#contacto-section*/
-
-
-  /*/*por algunos ajustes en los tamaños del body, el footer se me perdió en las páginas de presupuesto y contacto, de modo que lo voy a llevar al fondo de la página de manera manual*/
-  .ajustado1{
-    position:absolute;
-    top:330%;
-  }
-
-  .ajustado2{
-    position:absolute;
-    top:300%;
-  }
 
 }
