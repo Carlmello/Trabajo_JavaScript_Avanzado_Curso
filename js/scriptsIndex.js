@@ -122,12 +122,12 @@ const BRANDS = [
   {
     'brand': 'Fiat',
     'anchor': 'https://www.fiat.com',
-    'logo': './assets/images/brands_logos/fiat-svgrepo-com.svg'
+    'logo': 'assets/images/brands_logos/fiat-svgrepo-com.svg'
   },
   {
     'brand': 'Ford',
     'anchor': 'https://www.ford.com',
-    'logo': './assets/images/brands_logos/ford-svgrepo-com.svg'
+    'logo': '/assets/images/brands_logos/ford-svgrepo-com.svg'
   },
   {
     'brand': 'Honda',
