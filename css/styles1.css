@@ -861,7 +861,7 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
     flex-direction: column;
 
     main{
-      min-height:300vh;
+      min-height:375vh;
     }
 
   }
