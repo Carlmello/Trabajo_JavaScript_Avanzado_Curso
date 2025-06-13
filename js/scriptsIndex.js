@@ -73,7 +73,7 @@ function newsFetch(url) {
 const NEWS = document.querySelector("#newsContainer");
 const ERRORDIV = document.querySelector("#errordiv");
 
-newsFetch('../assets/json/news.json')
+newsFetch('./assets/json/news.json')
 
   .then(data => {
 
@@ -122,122 +122,122 @@ const BRANDS = [
   {
     'brand': 'Fiat',
     'anchor': 'https://www.fiat.com',
-    'logo': '../assets/images/brands_logos/fiat-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/fiat-svgrepo-com.svg'
   },
   {
     'brand': 'Ford',
     'anchor': 'https://www.ford.com',
-    'logo': '../assets/images/brands_logos/ford-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/ford-svgrepo-com.svg'
   },
   {
     'brand': 'Honda',
     'anchor': 'https://www.honda.com',
-    'logo': '../assets/images/brands_logos/honda-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/honda-svgrepo-com.svg'
   },
   {
     'brand': 'Hyundai',
     'anchor': 'https://www.hyundai.com/es/es.html',
-    'logo': '../assets/images/brands_logos/hyundai-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/hyundai-svgrepo-com.svg'
   },
   {
     'brand': 'Jaguar',
     'anchor': 'https://www.jaguar.com/index.html?hide_msb=true',
-    'logo': '../assets/images/brands_logos/jaguar-alt-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/jaguar-alt-svgrepo-com.svg'
   },
   {
     'brand': 'Jeep',
     'anchor': 'https://www.jeep.es/?campaignid=CN~JEEP-ES-HAGAKURE-BRAND-VARIACIONES-X-VN-ONGOING-SDF-X-X-X-VA_MK~ES_MB~JEEP_CAT~VN_PR~RANGE_CX~OnGoing_CH~SEA-SDF_AU~S_GL~TF_PK~LEAD_EN~RANGE_FF~VARIACIONES_ID~GLB0003LGN_FS~Local&source=GOOGLE&gclsrc=aw.ds&&utm_source=google&utm_medium=cpc&utm_id=336708405&utm_campaign=336708405&utm_term=10088611&utm_content=336708405_20476395765&gad_source=1&gad_campaignid=336708405&gclid=CjwKCAjw3f_BBhAPEiwAaA3K5AIG-NDe4VH_591J0XTPgk4MpMOxrixviE4bdN-Qxum4EVx5tSULYhoCPwUQAvD_BwE',
-    'logo': '../assets/images/brands_logos/jeep-alt-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/jeep-alt-svgrepo-com.svg'
   },
   {
     'brand': 'Kia',
     'anchor': 'https://www.kia.com/es/',
-    'logo': '../assets/images/brands_logos/kia-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/kia-svgrepo-com.svg'
   },
   {
     'brand': 'Lamborghini',
     'anchor': 'https://www.lamborghini.com/es-en',
-    'logo': '../assets/images/brands_logos/lamborghini-alt-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/lamborghini-alt-svgrepo-com.svg'
   },
   {
     'brand': 'Lotus',
     'anchor': 'https://www.lotuscars.com/en-GB',
-    'logo': '../assets/images/brands_logos/lotus-alt-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/lotus-alt-svgrepo-com.svg'
   },
   {
     'brand': 'Maserati',
     'anchor': 'https://www.maserati.com/es/es/shopping-tools/wtl-grecale?campaignName=7017T000000UZZC&wtl_source=7017T000000UZZC&utm_medium=paidsearch&utm_source=google&utmcampaign=eu_digit_grgtpmax_lead_es_2024_es_gr_hyb_pmax&gclsrc=aw.ds&gad_source=1&gad_campaignid=20750986734&gclid=CjwKCAjw3f_BBhAPEiwAaA3K5FvuMhq3nwxVZy1tuBsEJ5yoG--vyuGX5xsWWcZZ0sTSSZgRxV6TqhoCvAkQAvD_BwE',
-    'logo': '../assets/images/brands_logos/maserati-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/maserati-svgrepo-com.svg'
   },
   {
     'brand': 'Mazda',
     'anchor': 'https://www.mazda.com/en/',
-    'logo': '../assets/images/brands_logos/mazda-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/mazda-svgrepo-com.svg'
   },
   {
     'brand': 'McLaren',
     'anchor': 'https://cars.mclaren.com/es-es',
-    'logo': '../assets/images/brands_logos/mclaren-alt-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/mclaren-alt-svgrepo-com.svg'
   },
   {
     'brand': 'Mercedes_Benz',
     'anchor': 'https://www.mercedes-benz.es/?gagcmid=GA_20716971962_155060255716_679585325237&utm_source=GOOGLE&utm_medium=cpc&utm_campaign=C.B.SEA.MB_NA_LA_ES_PUREBRAND_HYS202412996271&gclsrc=aw.ds&gad_source=1&gad_campaignid=20716971962&gclid=CjwKCAjw3f_BBhAPEiwAaA3K5Ck55wrd4GM_U-z_yIEvBLa_Coa0RAKCdT4OWQ_JVyPzmp2N8G1URRoCNvMQAvD_BwE',
-    'logo': '../assets/images/brands_logos/mercedes-benz-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/mercedes-benz-svgrepo-com.svg'
   },
   {
     'brand': 'Mitsubishi',
     'anchor': 'https://www.mitsubishi-motors.es',
-    'logo': '../assets/images/brands_logos/mitsubishi-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/mitsubishi-svgrepo-com.svg'
   },
   {
     'brand': 'Nissan',
     'anchor': 'https://www.nissan.es',
-    'logo': '../assets/images/brands_logos/nissan-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/nissan-svgrepo-com.svg'
   },
   {
     'brand': 'Opel',
     'anchor': 'https://www.opel.es',
-    'logo': '../assets/images/brands_logos/opel-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/opel-svgrepo-com.svg'
   },
   {
     'brand': 'Peugeot',
     'anchor': 'https://www.peugeot.es/?srsltid=AfmBOorqS8kKNXEDJfFmChlPq_RzvFboD0MZbypJ2pPK9q7f3K4OUQCv',
-    'logo': '../assets/images/brands_logos/peugeot-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/peugeot-svgrepo-com.svg'
   },
   {
     'brand': 'Porsche',
     'anchor': 'https://www.porsche.com/spain/',
-    'logo': '../assets/images/brands_logos/porsche-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/porsche-svgrepo-com.svg'
   },
   {
     'brand': 'Renault',
     'anchor': 'https://www.renault.es/?CAMPAIGN=es-es-r-l-def-brand-all_products-na-go-classic-marca_variaciones-omd202412996482&ORIGIN=paid_search&utm_source=google&utm_source_platform=SA360&utm_medium=cpc&utm_campaign=es-es-r-l-def-brand-all_products-na-go-classic-marca_variaciones-omd202412996482&utm_id=10380308560&gclsrc=aw.ds&&&ppc_keyword=renault%20online&gad_source=1&gad_campaignid=10380308560&gclid=CjwKCAjw3f_BBhAPEiwAaA3K5JTU2W0AuUliQE_8Jgoj24EtvQ9ctARIbwI1GWhTWdg6MXiY-F9J7xoCJOoQAvD_BwE',
-    'logo': '../assets/images/brands_logos/renault-alt-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/renault-alt-svgrepo-com.svg'
   },
   {
     'brand': 'Subaru',
     'anchor': 'https://www.subaru.com/es/index.html',
-    'logo': '../assets/images/brands_logos/subaru-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/subaru-svgrepo-com.svg'
   },
   {
     'brand': 'Suzuki',
     'anchor': 'https://www.globalsuzuki.com',
-    'logo': '../assets/images/brands_logos/suzuki-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/suzuki-svgrepo-com.svg'
   },
   {
     'brand': 'Toyota',
     'anchor': 'https://www.toyota.com',
-    'logo': '../assets/images/brands_logos/toyota-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/toyota-svgrepo-com.svg'
   },
   {
     'brand': 'Volkswagen',
     'anchor': 'https://www.vw.com/es/en.html',
-    'logo': '../assets/images/brands_logos/volkswagen-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/volkswagen-svgrepo-com.svg'
   },
   {
     'brand': 'Volvo',
     'anchor': 'https://www.volvo.com/en/',
-    'logo': '../assets/images/brands_logos/volvo-svgrepo-com.svg'
+    'logo': './assets/images/brands_logos/volvo-svgrepo-com.svg'
   }
 ];
 
