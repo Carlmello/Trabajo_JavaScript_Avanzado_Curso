@@ -1035,6 +1035,24 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
 
     } /*h4-div*/
 
+    .checkbox-extra , .radio-plazo{
+      display:none;
+    }
+
+    .checkbox-extra:checked + .resaltar-movil{
+      border:5px solid var(--myblack);
+      border-radius:8px;
+      background-color: white;
+      font-weight:bold;
+    }
+
+    .radio-plazo:checked + .resaltar-movil {
+      border:5px solid var(--myblack);
+      border-radius:8px;
+      background-color: white;
+      font-weight:bold;
+    }
+    
   } /*#purchase-div*/
 
   #carrito{
